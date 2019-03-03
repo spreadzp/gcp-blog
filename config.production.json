@@ -1,0 +1,33 @@
+{
+    "url": "https://caravan2020.appspot.com",
+    "fileStorage": false,
+    "mail": {},
+    "database": {
+        "client": "mysql",
+        "connection": {
+            "socketPath": "/cloudsql/caravan2020:us-central1:caravan",
+            "user": "root",
+            "password": "12345678",
+            "database": "caravan",
+            "charset": "utf8"
+        },
+        "debug": false
+    },
+    "server": {
+        "host": "0.0.0.0",
+        "port": "8080"
+    },
+    "paths": {
+        "contentPath": "content/"
+    },
+    "logging": {
+        "level": "info",
+        "rotation": {
+            "enabled": true
+        },
+        "transports": [
+            "file",
+            "stdout"
+        ]
+    }
+}
